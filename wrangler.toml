@@ -1,0 +1,13 @@
+name = "jhonacode_test"
+type = "webpack"
+
+account_id = "your_cloudflare_account_id"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[build]
+command = "wasm-pack build --target web"
+
+[build.upload]
+format = "service-worker"
